@@ -38,4 +38,5 @@ return (
     </table>  
   )
 }
+
 export default DynamicTable;
