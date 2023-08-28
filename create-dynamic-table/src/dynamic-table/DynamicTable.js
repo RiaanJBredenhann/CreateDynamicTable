@@ -1,24 +1,24 @@
 import { useEffect } from "react";
 import TableData from "./TableData";
 
-function DynamicTable(){
+function DynamicTable() {
 // get table column
  const column = Object.keys(TableData[0]);
 
  // get table heading data
- const ThData =()=>{
+ const ThData = () => {
      return column.map((data)=>{
          return <th key={data}>{data}</th>
      })
  }
 
 // get table row data
-const tdData =() =>{
+const tdData = () => {
      return TableData.map((data)=>{
-       return(
+       return (
            <tr>
                 {
-                   column.map((v)=>{
+                   column.map((v) => {
                        return <td>{data[v]}</td>
                    })
                 }
